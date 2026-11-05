@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "alma",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "alma-marrakech", "run", "dev"],
+      "port": 5173
+    },
+    {
+      "name": "alma-build",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "alma-marrakech", "run", "preview", "--", "--port", "4173", "--strictPort"],
+      "port": 4173
+    }
+  ]
+}
