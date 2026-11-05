@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Alma Marrakech — La villa en 3D</title>
+  <meta name="description" content="Alma Marrakech : ouvrez la villa type 01 en 3D, niveau par niveau. Une résidence fermée de 115 villas près de Marrakech.">
+  <meta name="theme-color" content="#f1e8da">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alma Marrakech — La villa en 3D">
+  <meta property="og:description" content="Ouvrez la villa type 01, niveau par niveau.">
+  <meta property="og:image" content="/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_MA">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23a5532d'/%3E%3Ctext x='16' y='23' font-family='sans-serif' font-size='20' text-anchor='middle' fill='%23f7f1e7'%3Ea%3C/text%3E%3C/svg%3E">
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+  <div class="loader" role="status" aria-label="Chargement de la maquette">
+    <span class="mono">Alma</span>
+    <i aria-hidden="true"></i>
+    <span class="mono">Maquette 3D</span>
+  </div>
+
+  <a class="skip" href="#images">Passer la maquette 3D</a>
+
+  <header class="top" data-theme="light">
+    <a class="top__logo" href="#maquette" aria-label="Alma Marrakech, retour en haut">alma</a>
+    <nav class="top__nav mono" aria-label="Navigation principale">
+      <a href="#maquette">Maquette</a>
+      <a href="#images">Images</a>
+      <a href="#plans">Plans</a>
+      <a href="#residence">Résidence</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 3D: the villa, opened by scrolling -->
+    <section class="stage" id="maquette" data-theme="light" aria-label="Maquette 3D de la villa type 01">
+      <div class="stage__sticky">
+        <div class="stage__sky" aria-hidden="true"></div>
+        <p class="stage__word" aria-hidden="true">alma</p>
+
+        <div class="stage__view">
+          <canvas data-canvas role="img" aria-label="Maquette 3D de la villa type 01. Faites glisser pour la tourner, faites défiler pour l'ouvrir niveau par niveau."></canvas>
+        </div>
+        <div class="stage__labels" data-labels aria-hidden="true"></div>
+
+        <div class="stage__panels">
+          <article class="panel panel--hero">
+            <h1 class="panel__kicker mono">Alma Marrakech · Villa type 01</h1>
+            <p class="panel__lead">Prenez la villa en main.</p>
+            <p class="panel__hint mono"><span class="hint-drag">Glisser pour tourner</span> <span>Défiler pour ouvrir</span></p>
+          </article>
+          <article class="panel">
+            <p class="panel__kicker mono"><b>01</b> Le volume</p>
+            <h2 class="panel__title">Un cadre blanc, posé sur la brique.</h2>
+            <p class="panel__body">L'étage s'élargit à 14,57 m au-dessus d'un rez-de-chaussée de 12,51 m. Ce débord dessine les terrasses, et l'ombre des baies.</p>
+          </article>
+          <article class="panel">
+            <p class="panel__kicker mono"><b>02</b> L'ouverture</p>
+            <h2 class="panel__title">Deux niveaux, un toit.</h2>
+            <p class="panel__body">La villa se lit couche par couche, comme une maquette d'architecte que l'on démonte.</p>
+          </article>
+          <article class="panel">
+            <p class="panel__kicker mono"><b>03</b> 1<sup>er</sup> étage</p>
+            <h2 class="panel__title">En haut, les chambres.</h2>
+            <p class="panel__body">Une suite parentale avec dressing, deux chambres, des salles de bain et une terrasse. Un vide relie l'étage au rez-de-chaussée.</p>
+          </article>
+          <article class="panel">
+            <p class="panel__kicker mono"><b>04</b> Rez-de-chaussée</p>
+            <h2 class="panel__title">En bas, la vie commune.</h2>
+            <p class="panel__body">Hall d'entrée, salon européen, salon marocain, séjour, cuisine et salle de bain, ouverts sur le jardin.</p>
+          </article>
+          <article class="panel">
+            <p class="panel__kicker mono"><b>05</b> La parcelle</p>
+            <h2 class="panel__title">22,50 m sur 15 m.</h2>
+            <p class="panel__body">Une piscine de 3,10 × 8,17 m, une terrasse, et un jardin sur deux côtés de la maison.</p>
+          </article>
+          <article class="panel">
+            <p class="panel__kicker mono"><b>06</b> Le soir</p>
+            <h2 class="panel__title">Puis les baies s'allument.</h2>
+            <p class="panel__body">La même villa, à la nuit tombée. Tournez-la encore, ou continuez vers les images.</p>
+          </article>
+        </div>
+
+        <div class="stage__rail" aria-label="Étapes de la maquette" role="group">
+          <button type="button" data-go aria-label="Vue d'ensemble"></button>
+          <button type="button" data-go aria-label="Le volume"></button>
+          <button type="button" data-go aria-label="L'ouverture"></button>
+          <button type="button" data-go aria-label="Premier étage"></button>
+          <button type="button" data-go aria-label="Rez-de-chaussée"></button>
+          <button type="button" data-go aria-label="La parcelle"></button>
+          <button type="button" data-go aria-label="Le soir"></button>
+        </div>
+
+        <div class="stage__tools mono">
+          <span class="stage__count"><span data-counter>00</span> / 06</span>
+          <span class="stage__turn">
+            <button type="button" data-turn="left" aria-label="Tourner la villa vers la gauche">←</button>
+            <button type="button" data-turn="right" aria-label="Tourner la villa vers la droite">→</button>
+          </span>
+          <button class="switch" type="button" data-night aria-pressed="false">
+            <span>Jour</span><i aria-hidden="true"></i><span>Nuit</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- From the model to the images -->
+    <section class="images" id="images" data-theme="light">
+      <div class="head" data-reveal>
+        <p class="mono kicker">De la maquette à l'image</p>
+        <h2 class="title">Les mêmes volumes, habillés de lumière.</h2>
+      </div>
+      <figure class="images__wide" data-reveal>
+        <img loading="lazy" decoding="async" width="1672" height="941" src="/img/angle-b-1672.webp" srcset="/img/angle-b-1000.webp 1000w, /img/angle-b-1672.webp 1672w" sizes="100vw" alt="Rangée de villas, volume blanc en porte-à-faux et brique, sous un ciel de fin de journée.">
+        <figcaption class="mono">Les villas sur la rue</figcaption>
+      </figure>
+      <div class="images__grid">
+        <figure data-reveal>
+          <img loading="lazy" decoding="async" width="1672" height="941" src="/img/salon-1672.webp" srcset="/img/salon-1000.webp 1000w, /img/salon-1672.webp 1672w" sizes="(min-width: 768px) 60vw, 100vw" alt="Salon au sol de marbre, ouvert sur le jardin par de grandes baies vitrées.">
+          <figcaption class="mono">Le salon, ouvert sur le jardin</figcaption>
+        </figure>
+        <figure data-reveal>
+          <img loading="lazy" decoding="async" width="1672" height="941" src="/img/piscine-1672.webp" srcset="/img/piscine-1000.webp 1000w, /img/piscine-1672.webp 1672w" sizes="(min-width: 768px) 40vw, 100vw" alt="Piscine privée le long de la terrasse de bois d'une villa, en fin de journée.">
+          <figcaption class="mono">La piscine, le long de la terrasse</figcaption>
+        </figure>
+        <figure data-reveal>
+          <img loading="lazy" decoding="async" width="1672" height="941" src="/img/chambre-1672.webp" srcset="/img/chambre-1000.webp 1000w, /img/chambre-1672.webp 1672w" sizes="(min-width: 768px) 40vw, 100vw" alt="Chambre aux tons clairs, ouverte sur une terrasse.">
+          <figcaption class="mono">La chambre et sa terrasse</figcaption>
+        </figure>
+        <figure data-reveal>
+          <img loading="lazy" decoding="async" width="1672" height="943" src="/img/sejour-1672.webp" srcset="/img/sejour-1000.webp 1000w, /img/sejour-1672.webp 1672w" sizes="(min-width: 768px) 60vw, 100vw" alt="Séjour sur double hauteur avec escalier de bois et banquettes.">
+          <figcaption class="mono">Le séjour et l'escalier</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- The drawings -->
+    <section class="plans" id="plans" data-theme="light">
+      <div class="head" data-reveal>
+        <p class="mono kicker">Les plans</p>
+        <h2 class="title">Tout part du dessin.</h2>
+      </div>
+      <div class="plans__body">
+        <div class="tabs mono" role="group" aria-label="Choisir un plan" data-tabs>
+          <button type="button" data-tab="t1-rdc" aria-pressed="true">Type 01 · RDC</button>
+          <button type="button" data-tab="t1-etage" aria-pressed="false">Type 01 · Étage</button>
+          <button type="button" data-tab="t2-rdc" aria-pressed="false">Type 02 · RDC</button>
+        </div>
+        <figure class="sheet" data-pane="t1-rdc">
+          <img loading="lazy" decoding="async" width="1800" height="1110" src="/img/plan-t1-rdc-1800.webp" srcset="/img/plan-t1-rdc-1000.webp 1000w, /img/plan-t1-rdc-1800.webp 1800w" sizes="(min-width: 900px) 72vw, 100vw" alt="Plan du rez-de-chaussée de la villa type 01.">
+        </figure>
+        <figure class="sheet" data-pane="t1-etage" hidden>
+          <img loading="lazy" decoding="async" width="1800" height="1110" src="/img/plan-t1-etage-1800.webp" srcset="/img/plan-t1-etage-1000.webp 1000w, /img/plan-t1-etage-1800.webp 1800w" sizes="(min-width: 900px) 72vw, 100vw" alt="Plan du premier étage de la villa type 01.">
+        </figure>
+        <figure class="sheet" data-pane="t2-rdc" hidden>
+          <img loading="lazy" decoding="async" width="1800" height="1212" src="/img/plan-t2-rdc-1800.webp" srcset="/img/plan-t2-rdc-1000.webp 1000w, /img/plan-t2-rdc-1800.webp 1800w" sizes="(min-width: 900px) 72vw, 100vw" alt="Plan du rez-de-chaussée de la villa type 02.">
+        </figure>
+      </div>
+      <div class="elevs">
+        <figure data-reveal><img loading="lazy" decoding="async" width="1200" height="720" src="/img/elev-principale-1200.webp" srcset="/img/elev-principale-700.webp 700w, /img/elev-principale-1200.webp 1200w" sizes="(min-width: 768px) 33vw, 100vw" alt="Élévation de la façade principale."><figcaption class="mono">Façade principale</figcaption></figure>
+        <figure data-reveal><img loading="lazy" decoding="async" width="1200" height="564" src="/img/elev-laterale-1200.webp" srcset="/img/elev-laterale-700.webp 700w, /img/elev-laterale-1200.webp 1200w" sizes="(min-width: 768px) 33vw, 100vw" alt="Élévation de la façade latérale."><figcaption class="mono">Façade latérale</figcaption></figure>
+        <figure data-reveal><img loading="lazy" decoding="async" width="1200" height="623" src="/img/elev-arriere-1200.webp" srcset="/img/elev-arriere-700.webp 700w, /img/elev-arriere-1200.webp 1200w" sizes="(min-width: 768px) 33vw, 100vw" alt="Élévation de la façade arrière."><figcaption class="mono">Façade arrière</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- The residence -->
+    <section class="residence" id="residence" data-theme="light">
+      <div class="head" data-reveal>
+        <p class="mono kicker">La résidence</p>
+        <h2 class="title">Une villa parmi cent quinze.</h2>
+      </div>
+      <figure class="residence__map" data-reveal>
+        <img loading="lazy" decoding="async" width="2000" height="1117" src="/img/masse-jour-2000.webp" srcset="/img/masse-jour-1000.webp 1000w, /img/masse-jour-2000.webp 2000w" sizes="100vw" alt="Plan masse de la résidence en vue aérienne : rangées de villas, rues intérieures et piscine centrale.">
+      </figure>
+      <dl class="numbers">
+        <div data-reveal><dt class="mono">Villas</dt><dd>115</dd></div>
+        <div data-reveal><dt class="mono">Assiette foncière</dt><dd>6 ha</dd></div>
+        <div data-reveal><dt class="mono">Villas type 01</dt><dd>34</dd></div>
+        <div data-reveal><dt class="mono">Villas type 02</dt><dd>81</dd></div>
+        <div data-reveal><dt class="mono">Hauteur</dt><dd>R+1</dd></div>
+      </dl>
+      <p class="residence__note" data-reveal>Un club house, une piscine et une salle de sport au cœur d'une résidence fermée, près de Marrakech et de la Nationale 7.</p>
+    </section>
+
+    <section class="end" data-theme="dark">
+      <img class="end__img" loading="lazy" decoding="async" width="2000" height="1126" src="/img/portail-nuit-2000.webp" srcset="/img/portail-nuit-1000.webp 1000w, /img/portail-nuit-2000.webp 2000w" sizes="100vw" alt="L'entrée de la résidence Alma de nuit, enseigne et jardins éclairés.">
+      <div class="end__body">
+        <p class="end__word">alma</p>
+        <p class="mono end__note">Maquette 3D indicative, établie d'après les plans du dossier de septembre 2026. Images de synthèse non contractuelles.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
