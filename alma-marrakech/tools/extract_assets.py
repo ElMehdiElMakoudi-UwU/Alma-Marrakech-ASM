@@ -122,16 +122,6 @@ render_clip(12, (30, 122, 480, 392), "elev-principale", widths=(1200, 700))
 render_clip(12, (590, 122, 1165, 392), "elev-laterale", widths=(1200, 700))
 render_clip(12, (350, 435, 860, 700), "elev-arriere", widths=(1200, 700))
 
-# Archifusion symbol from the back cover, with its transparency
-pix = pymupdf.Pixmap(doc, 231)
-if pix.colorspace is None or pix.colorspace.n != 3:
-    pix = pymupdf.Pixmap(pymupdf.csRGB, pix)
-mask_xref = doc.extract_image(231).get("smask") or 0
-if mask_xref:
-    pix = pymupdf.Pixmap(pix, pymupdf.Pixmap(doc, mask_xref))
-pix.save(OUT / "archifusion.png")
-print("archifusion.png", pix.width, pix.height, "alpha" if pix.alpha else "opaque")
-
 # Link preview image: social networks expect a 1200x630 JPEG
 with Image.open(OUT / "portail-jour-2000.webp") as hero:
     hero.convert("RGB").crop((0, 40, 2000, 1090)).resize((1200, 630), Image.LANCZOS).save(OUT / "og.jpg", quality=85)

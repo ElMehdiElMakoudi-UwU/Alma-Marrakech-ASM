@@ -106,7 +106,7 @@ body::after {
 }
 .xt__row > span { display: block; will-change: transform; }
 
-/* Drafting lines, a nod to the architect's grid */
+/* Thin vertical drafting lines */
 .lines {
   position: absolute; inset: 0; pointer-events: none;
   background:
@@ -380,12 +380,8 @@ body::after {
 .contact__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(21,23,43,.1) 0, rgba(21,23,43,0) 48%, rgba(21,23,43,.92) 84%); }
 .contact__body { position: relative; padding: 18svh var(--gutter) clamp(24px, 5vh, 48px); }
 .contact__body .kicker { color: var(--braise); }
-.contact__links { display: flex; flex-wrap: wrap; gap: .4rem clamp(1.5rem, 4vw, 3.5rem); margin-top: 1.5rem; }
-.contact__links a { font-size: clamp(1.25rem, 2vw, 1.8rem); text-decoration: none; overflow-wrap: anywhere; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: .15rem; }
-.contact__links a:hover { color: var(--braise); }
-.contact__foot { position: relative; display: flex; align-items: center; gap: 1rem; padding: 1.1rem var(--gutter); border-top: 1px solid rgba(247,241,231,.2); }
-.contact__foot img { width: 20px; height: auto; filter: brightness(0) invert(1); opacity: .9; }
-.contact__note { margin-left: auto; text-align: right; letter-spacing: .1em; opacity: .75; }
+.contact__foot { position: relative; padding: 1.1rem var(--gutter); border-top: 1px solid rgba(247,241,231,.2); }
+.contact__note { letter-spacing: .1em; opacity: .75; }
 
 /* Small screens */
 @media (max-width: 767.98px) {
@@ -440,8 +436,6 @@ body::after {
   /* Keeps the lit sign clear of the text. */
   .contact__img { height: 68%; bottom: auto; object-position: 50% 62%; }
   .contact__scrim { background: linear-gradient(180deg, rgba(21,23,43,.1) 0, rgba(21,23,43,0) 42%, var(--nuit) 68%); }
-  .contact__foot { flex-wrap: wrap; }
-  .contact__note { margin-left: 0; text-align: left; width: 100%; }
 }
 
 /* No script or reduced motion: everything is shown, nothing is pinned. */

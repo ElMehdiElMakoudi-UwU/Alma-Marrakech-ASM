@@ -1,6 +1,6 @@
 # Alma Marrakech
 
-One-page presentation site for the Alma Marrakech residence (Archifusion). All facts and images come from the September 2026 dossier.
+One-page presentation site for the Alma Marrakech residence. All facts and images come from the September 2026 dossier.
 
 ## Run and build
 
@@ -69,5 +69,6 @@ docker run --rm -p 8080:80 alma-marrakech
 
 ## Before going live
 
-- Confirm the open points with Archifusion: exact location (the PDF footer says Assilah), total lot area (31,650 or 31,765 m²), the missing Type 02 upper floor plan, and the phone number's WhatsApp use.
+- Confirm the open points: exact location (the PDF footer says Assilah), total lot area (31,650 or 31,765 m²) and the missing Type 02 upper floor plan.
+- Add a way to get in touch: the closing section currently has no contact details.
 - Check the licence for the satellite base maps (`carte-*.webp`) and add any required credit.
